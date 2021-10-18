@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment.Fragment_Home.BlankFragment_Home">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarnef"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@null"
+        >
+
+        <ImageView
+            android:layout_marginTop="@dimen/_9sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:background="@drawable/travelil"
+            android:contentDescription="TODO" />
+        <ImageButton
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="13sp"
+            android:paddingLeft="10dp"
+            android:id="@+id/btmessger"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/message"
+            android:contentDescription="TODO" />
+
+        <ImageButton
+            android:id="@+id/btadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="13sp"
+            android:layout_marginRight="65dp"
+            android:layout_toLeftOf="@+id/btmessger"
+            android:background="@drawable/add"
+            android:contentDescription="TODO"
+            android:paddingLeft="10dp" />
+
+    </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ACACAC"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/recycalviewhome">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

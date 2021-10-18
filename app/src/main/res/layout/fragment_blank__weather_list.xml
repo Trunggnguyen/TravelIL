@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    tools:context=".Fragment.BlankFragment_WeatherList">
+    <RelativeLayout
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:background="#807C7C7C"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:text="Thời tiết 1 tuần tới"
+            />
+    </RelativeLayout>
+     <RelativeLayout
+         android:layout_below="@+id/list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+         <androidx.recyclerview.widget.RecyclerView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/recycalviewweather"/>
+
+     </RelativeLayout>
+
+
+
+</RelativeLayout>

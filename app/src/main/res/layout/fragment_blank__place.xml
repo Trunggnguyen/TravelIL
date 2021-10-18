@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/_20sdp"
+    tools:context=".Fragment.Fragment_Home.BlankFragment_Place">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textviewss"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:text="Gần bạn"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:textSize="@dimen/_17sdp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Xem thêm"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/_12sdp"
+        android:id="@+id/xemthem"
+        android:textColor="@color/black"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/recycalviewplace"
+       android:layout_below="@+id/textviewss"
+       android:layout_marginTop="@dimen/_5sdp"
+       android:layout_marginLeft="@dimen/_5sdp"
+       />
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment.Fragment_Home.BlankFragment_PostDetail">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbarpostdetail"
+        android:layout_width="match_parent"
+        android:background="#FF3C415E"
+        android:layout_height="?attr/actionBarSize"
+        >
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_below="@+id/toolbarpostdetail"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmentpost"
+            android:name="com.example.travelil.Fragment.Fragment_Home.BlankFragment_PostDetail"
+            />
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmentpostid"
+            class="com.example.travelil.Fragment.Fragment_Home.BlankFragment_Comment"
+            android:name="com.example.travelil.Fragment.Fragment_Home.BlankFragment_Comment"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/white"
+            android:layout_below="@+id/recycalviewcmt"
+            >
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottoms"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:padding="@dimen/_4sdp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:id="@+id/image_profilecmt"/>
+            <EditText
+                android:id="@+id/add_comment"
+                android:textColorHint="#9F9F9F"
+                android:textSize="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_toRightOf="@+id/image_profilecmt"
+                android:hint="Add a comment....."
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toLeftOf="@+id/post"
+                android:layout_marginEnd="@dimen/_10sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/post"
+                android:textColor="@color/white"
+                android:text="Post"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

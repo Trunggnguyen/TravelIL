@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bau_troi"
+    tools:context=".Activity.Home.Weather_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="#807C7C7C"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbarnhietdo"/>
+
+
+    <ScrollView
+        android:layout_below="@+id/toolbarnhietdo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="#807C7C7C"
+                android:id="@+id/searchlace"
+
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_weight="0.8"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:hint="Nhap ten tinh, thanh pho"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textSize="15sp"
+                        android:id="@+id/searchplace"
+                        android:textColorHint="#DAD9D8"
+                        android:textColor="@color/white"
+                        android:background="#807C7C7C"
+                        />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="0dp"
+                        android:text="Search"
+                        android:id="@+id/searchnow"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:background="#4A4B59"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40sdp"
+                        />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragmentweathernow"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragmentweatherlist"
+             />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

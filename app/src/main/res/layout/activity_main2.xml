@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+tools:context=".Activity.Home.MainActivity2">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/myviewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            />
+    </FrameLayout>
+
+    <com.simform.custombottomnavigation.SSCustomBottomNavigation
+        android:layout_marginBottom="-13dp"
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:ss_backgroundBottomColor="#ffffff"
+        app:ss_circleColor="#ff6f00"
+        app:ss_countBackgroundColor="#ff6f00"
+        app:ss_countTextColor="#ffffff"
+        app:ss_defaultIconColor="#A1A1A1"
+        app:ss_iconTextColor="#A1A1A1"
+        app:ss_iconTextSize="-3sp"
+        app:ss_iconTextTypeface="@null"
+        app:ss_rippleColor="#2f424242"
+        app:ss_selectedIconColor="#ff6f00"
+        app:ss_selectedIconTextColor="#ff6f00"
+        app:ss_shadowColor="#1f212121"
+        app:ss_waveHeight="0" />
+
+
+</RelativeLayout>

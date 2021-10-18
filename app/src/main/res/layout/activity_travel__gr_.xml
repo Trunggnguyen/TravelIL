@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.Travel_Gr_Activity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:background="#B39692"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:id="@+id/ic_baocao"
+                android:layout_alignParentRight="true"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/more"
+                />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:nestedScrollingEnabled="false"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/imagebanner"
+                android:background="@mipmap/ic_launcher"
+                app:layout_constraintDimensionRatio="16:9"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/black"
+            android:id="@+id/name"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="25sp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHuyen ddi 2021"
+            android:textColor="#878787"
+            android:id="@+id/menber"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="15sp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:textSize="17sp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:id="@+id/click"
+            android:textStyle="bold"
+            android:text="Xem chi tiết chuyến đi"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="@drawable/background_dayonclick"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giới thiệu"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="25sp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:id="@+id/imagechedo"
+                android:src="@drawable/ic_public"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/place"
+                android:id="@+id/chedo"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@drawable/ic_place"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                />
+              <TextView
+
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Che do"
+                  android:layout_marginLeft="@dimen/_5sdp"
+                  android:id="@+id/place"
+                  android:textColor="@color/black"
+                  android:layout_marginTop="@dimen/_5sdp"
+                  android:textSize="15sp"
+                  android:layout_toRightOf="@+id/place"
+
+                  />
+          </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/lace"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/time_24" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Che do"
+                android:id="@+id/date"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="15sp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/place"
+
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thành viên"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="25sp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textStyle="bold"
+            />
+        <RelativeLayout
+           android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/relaytive"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:id="@+id/profile_image"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:id="@+id/profile_image2"
+                android:layout_marginLeft="@dimen/_20sdp"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:id="@+id/profile_image3"
+                android:layout_marginLeft="@dimen/_40sdp"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:id="@+id/profile_image4"
+                android:layout_marginLeft="@dimen/_60sdp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/_20sdp"
+            android:background="#B1B1B1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hoat động"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textSize="25sp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textStyle="bold"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/farme"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/_20sdp"
+            android:background="#B1B1B1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đánh giá chuyến đi"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="20sp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textStyle="bold"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/farmecmt"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

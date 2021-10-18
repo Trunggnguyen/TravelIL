@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/shadow_224731"/>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_20sdp"/>
+            <solid android:color="#FFFFFF"/>
+            <gradient android:startColor="@color/white"
+                android:angle="270"
+                android:endColor="#B4F2F8"/>
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.BlankFragment_CmtGrTr">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/linear"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.5"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_15sdp"
+            android:id="@+id/rank"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textColor="@color/black"/>
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:rating="3.5"
+            android:isIndicator = "true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            style="@android:style/Widget.Holo.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:stepSize="0.5"
+            android:transformPivotX="1dp"
+            android:transformPivotY="1dp"
+            android:max="5"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100 danh gia"
+        android:id="@+id/danh"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:textColor="@color/black"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/linear"
+        android:id="@+id/farmevote"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/farmevote"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycalview" />
+</RelativeLayout>

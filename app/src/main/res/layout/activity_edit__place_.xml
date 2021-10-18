@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6D6D6"
+    android:orientation="vertical"
+    tools:context=".Activity.Edit_Place_Activity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/appcolor"
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentRight="true"
+                android:text="Lưu"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/saver"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginRight="@dimen/_10sdp"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thêm ảnh nền"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="12sp"
+                />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="16:9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@color/white" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="@dimen/_130sdp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Thêm ảnh đại diện"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textSize="12sp"
+                            />
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:background="@color/white"
+                                android:layout_margin="@dimen/_10sdp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintDimensionRatio="3:5"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="@dimen/_130sdp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textSize="12sp"
+                            />
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_margin="@dimen/_10sdp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintDimensionRatio="1:1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@color/white" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên địa điểm"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_backkrgoundaddplace"
+                android:layout_margin="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:id="@+id/name"
+                android:hint="Chùa Bái Đính"
+                android:textColor="#595959"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:textColorHint="#BABABA"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vị trí "
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10sdp"/>
+            <TextView
+                android:id="@+id/place"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_backkrgoundaddplace"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:textColor="#595959"
+                android:textColorHint="#BABABA"
+                android:textSize="12sp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thời gian mở cửa"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="@dimen/_10sdp"/>
+                        <TextView
+                            android:id="@+id/timestart"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/edittext_backkrgoundaddplace"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:textColor="#595959"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:textStyle="bold"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:inputType="number"
+                            android:hint="07:00"
+                            android:textColorHint="#BABABA"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thời gian đóng cửa "
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="@dimen/_10sdp"/>
+                        <TextView
+                            android:id="@+id/timeend"
+                            android:layout_width="match_parent"
+                            android:textStyle="bold"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/edittext_backkrgoundaddplace"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:textColor="#595959"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:hint="22:00"
+                            android:textColorHint="#BABABA"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="2">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thể loại "
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="@dimen/_10sdp"/>
+                        <Spinner
+                            android:id="@+id/theloai"
+                            android:layout_width="match_parent"
+                            android:textStyle="bold"
+
+                            android:layout_height="40dp"
+                            android:outlineSpotShadowColor="@color/black"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:paddingLeft="@dimen/_10sdp"
+                            style="?android:attr/spinnerItemStyle"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Giá vé "
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="@dimen/_10sdp"/>
+                        <EditText
+                            android:id="@+id/giave"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittext_backkrgoundaddplace"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:textColor="#595959"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:textStyle="bold"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:inputType="number"
+                            android:hint="200.000"
+                            android:textColorHint="#BABABA"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đặc điểm "
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10sdp"/>
+
+            <EditText
+                android:id="@+id/dacdiem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:background="@drawable/edittext_backkrgoundaddplace"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="start"
+                android:padding="25dp"
+                android:textColor="#595959"
+                android:textColorHint="#BABABA"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

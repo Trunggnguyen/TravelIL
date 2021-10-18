@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/load_app"
+    android:layout_height="match_parent"
+
+    tools:context=".Activity.Login.DangKy_Activity"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/relaytravel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/login_custum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.608"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Đăng ký"
+                android:textColor="#114C4A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp">
+
+
+                <EditText
+                    android:id="@+id/tennguoidung"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/edittext_backkrgound"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:hint="Tên người dùng"
+                    android:imeOptions="actionNone"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="47dp"
+                    android:textColor="#595959"
+                    android:textColorHint="#BABABA"
+                    android:textSize="12sp" />
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/name_account"
+                    android:contentDescription="TODO" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+
+                android:layout_marginRight="@dimen/_10sdp">
+
+
+                <EditText
+                    android:id="@+id/editTextTextEmailAddress2"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/edittext_backkrgound"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:maxLines="1"
+                    android:imeOptions="actionNone"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="47dp"
+                    android:textColor="#595959"
+                    android:textColorHint="#BABABA"
+                    android:textSize="12sp" />
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/email"
+                    android:contentDescription="TODO" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp">
+
+
+                <EditText
+                    android:id="@+id/editTextTextPassword2"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/edittext_backkrgound"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:hint="Mật khẩu"
+                    android:imeOptions="actionNone"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="47dp"
+                    android:textColor="#595959"
+                    android:textColorHint="#BABABA"
+                    android:textSize="12sp" />
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/key"
+                    android:contentDescription="TODO" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/nokey"
+                    android:contentDescription="TODO" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp">
+
+
+                <EditText
+                    android:id="@+id/editTextTextPassword3"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/edittext_backkrgound"
+                    android:ems="10"
+                    android:hint="Xác nhận mật khẩu"
+                    android:imeOptions="actionNone"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="47dp"
+                    android:textColor="#595959"
+                    android:maxLines="1"
+                    android:textColorHint="#BABABA"
+                    android:textSize="12sp" />
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/key"
+                    android:contentDescription="TODO" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/nokey"
+                    android:contentDescription="TODO" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:padding="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_toLeftOf="@+id/chapnhan"
+                    android:textSize="10dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/chapnhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toLeftOf="@id/editTextdienkoan"
+                    android:text="Bạn chấp nhận với "
+                    android:textColor="#6A6A6A"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/editTextdienkoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toLeftOf="@+id/va"
+                    android:text="Điều khoản "
+                    android:textColor="#114C4A"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/va"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toLeftOf="@+id/editTextdichvu"
+                    android:text="và "
+                    android:textColor="#6A6A6A"
+                    android:textSize="10sp"  />
+
+                <TextView
+                    android:id="@+id/editTextdichvu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="Dịch vụ"
+                    android:textColor="#114C4A"
+                    android:textSize="10sp"  />
+            </RelativeLayout>
+            <TextView
+                android:background="@drawable/bt_click"
+                android:id="@+id/button2"
+                android:layout_width="130dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Xác nhận"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_20sdp">
+
+                <TextView
+                    android:id="@+id/textViewdangky"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đăng nhập"
+                    android:textColor="#57A7AE"
+                    android:textSize="13dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/travelil"
+        app:layout_constraintBottom_toTopOf="@+id/relaytravel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707"
+        android:contentDescription="TODO" />
+</androidx.constraintlayout.widget.ConstraintLayout>

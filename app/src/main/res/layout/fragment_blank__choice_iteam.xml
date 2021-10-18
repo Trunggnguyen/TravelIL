@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E8E8E8"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment.Fragment_Home.BlankFragment_Choice_iteam">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:layout_marginBottom="@dimen/_10sdp"
+      android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:textColor="@color/black"
+          android:text="Tiện ích"
+          android:textStyle="bold"
+          android:layout_marginLeft="@dimen/_5sdp"
+          />
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_weight="3"
+          android:layout_height="wrap_content">
+          <RelativeLayout
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:layout_gravity="center"
+              android:layout_height="wrap_content">
+
+              <ImageView
+                  android:layout_width="@dimen/_40sdp"
+                  android:background="@drawable/writing"
+                  android:id="@+id/note"
+                  android:layout_margin="@dimen/_10sdp"
+                  android:layout_height="@dimen/_40sdp"/>
+          </RelativeLayout>
+          <RelativeLayout
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:layout_height="wrap_content">
+
+              <ImageView
+                  android:layout_width="@dimen/_40sdp"
+                  android:background="@drawable/cloudy"
+                  android:id="@+id/weather"
+                  android:layout_margin="@dimen/_10sdp"
+                  android:layout_height="@dimen/_40sdp"/>
+          </RelativeLayout>
+          <RelativeLayout
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:layout_height="wrap_content">
+
+              <ImageView
+                  android:layout_width="@dimen/_36sdp"
+                  android:layout_margin="@dimen/_2sdp"
+                  android:layout_height="@dimen/_36sdp"
+                  android:background="@drawable/mandala" />
+          </RelativeLayout>
+          <RelativeLayout
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:layout_height="wrap_content">
+
+              <ImageView
+                  android:layout_width="@dimen/_40sdp"
+                  android:background="@drawable/fast_food"
+                  android:layout_margin="@dimen/_10sdp"
+                  android:layout_height="@dimen/_40sdp"/>
+          </RelativeLayout>
+
+      </LinearLayout>
+
+
+
+  </LinearLayout>
+    
+   
+</RelativeLayout>

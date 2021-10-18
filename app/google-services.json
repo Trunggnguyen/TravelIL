@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1084827135257",
+    "project_id": "my-project-1618910455598",
+    "storage_bucket": "my-project-1618910455598.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084827135257:android:9d56d9a8987118db2a2988",
+        "android_client_info": {
+          "package_name": "com.example.travelil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084827135257-mhhochcfa5aso5s6i2jjlorr6vnahs97.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.travelil",
+            "certificate_hash": "3e4c6bce73d2d2c9b05fe1bb0f0e370d6a8c43c5"
+          }
+        },
+        {
+          "client_id": "1084827135257-ob2l5u61p49m6bb987q74ertnvvmhq7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-lfp0orj_6OVgwdUtdYxgAXf3wWoZT7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084827135257-ob2l5u61p49m6bb987q74ertnvvmhq7q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

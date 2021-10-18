@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.BlankFragment_TravelDay">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycalviewdaydeatail"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:background="@drawable/background_day"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/adddeatailday"
+        android:text="Thêm kỉ niệm"
+        android:gravity="center"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="#358161"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

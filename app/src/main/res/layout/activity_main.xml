@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent"
+
+
+    tools:context=".Activity.Login.MainActivity">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/travelil"
+            android:contentDescription="TODO" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="13dp"
+                            android:background="@drawable/email"
+                            android:contentDescription="TODO" />
+                        <EditText
+                            android:id="@+id/editTextTextEmailAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:imeOptions="actionNone"
+                            android:ems="10"
+                            android:paddingLeft="40dp"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="13dp"
+                        android:background="@drawable/key"
+                        android:contentDescription="TODO" />
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="13dp"
+                            android:background="@drawable/nokey"
+                            android:contentDescription="TODO" />
+
+                         <EditText
+                            android:textColor="#FFFFFF"
+                            android:hint="Password"
+                             android:paddingLeft="40dp"
+
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp"
+                             android:imeOptions="actionNone"
+                            android:id="@+id/editTextTextPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:ems="6"
+                            android:inputType="textPassword" />
+                    </RelativeLayout>
+
+                        <TextView
+
+                            android:layout_marginTop="25dp"
+                            android:id="@+id/imageButton"
+                            android:text="Đăng nhập"
+                            android:textColor="#FFFFFF"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textSize="13dp"
+                            android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            >
+
+
+
+            <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+                android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:id="@+id/textViewdangky"
+                android:layout_width="wrap_content"
+                android:layout_toLeftOf="@+id/hoac"
+                android:layout_height="wrap_content"
+                android:text="Đăng ký " />
+            <TextView
+
+                android:id="@+id/hoac"
+                android:textColor="#C1C1C1"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/textquenmatkhau"
+                android:text="hoặc " />
+            <TextView
+
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:id="@+id/textquenmatkhau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:text="Quên mật khẩu " />
+
+
+            </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="4dp"
+
+                            android:layout_marginRight="4dp">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/sms"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:contentDescription="TODO" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:text="Sử sụng SMS OTP"
+                                android:id="@+id/smsotp"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"/>
+
+
+                        </RelativeLayout>
+
+                        <com.facebook.login.widget.LoginButton
+                            android:id="@+id/login_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingTop="11dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingBottom="11dp"
+                            android:paddingLeft="12dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            />
+                        <com.google.android.gms.common.SignInButton
+                            android:id="@+id/sign_in_buttong"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="Tiếp tục với Google" />
+            <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:id="@+id/texttrogup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:text="Trợ giúp " />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+</LinearLayout>

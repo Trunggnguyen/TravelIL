@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.travelil">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TravelIL.NoActionBarAndStatusBar">
+        <activity android:name=".Activity.ListPlace_Activity"></activity>
+        <activity android:name=".Activity.Menber_Gr_Activity" />
+        <activity android:name=".Activity.Edit_Place_Activity" />
+        <activity android:name=".Activity.Place_Map_Activity" />
+        <activity android:name=".Activity.ChoicePlaceActivity" />
+        <activity android:name=".Activity.AddPlace_Activity" />
+        <activity android:name=".Activity.Edit_TravelGr_Activity" />
+        <activity android:name=".Activity.Pace_Activity" />
+        <activity android:name=".Activity.EditProfileActivity" />
+        <activity android:name=".Activity.EditNote" />
+        <activity android:name=".Activity.AddNote" />
+        <activity android:name=".Activity.NoteDetails" />
+        <activity android:name=".Activity.Chat.Note_Activity" />
+        <activity android:name=".Activity.FollowersActivity" />
+        <activity android:name=".Activity.StoryActivity" />
+        <activity android:name=".Activity.AddStoryActivity" />
+        <activity android:name=".Activity.Travel_Gr_Activity" />
+        <activity android:name=".Activity.PostDayActivity" />
+        <activity android:name=".Activity.Travel_Deatail_Activity" />
+        <activity android:name=".Activity.AddMenberTrip_Activity" />
+        <activity android:name=".Activity.Travel_Activity" />
+        <activity android:name=".Activity.Home.Search_Activity" />
+        <activity android:name=".Activity.Chat.Create_Activity" />
+        <activity android:name=".Activity.Chat.MessageGroup_Activity" />
+        <activity android:name=".Activity.Chat.Message_Activity" />
+        <activity android:name=".Activity.Home.Weather_Activity" />
+        <activity android:name=".Activity.Home.ChuyenDi_Activity" />
+        <activity android:name=".Activity.Home.Map_Activity" />
+        <activity android:name=".Activity.Home.NewFeed_Activity" />
+        <activity android:name=".Activity.Home.Post_DetailActivity" />
+        <activity android:name=".Activity.Login.Login_Activity" />
+        <activity android:name=".Activity.Home.Comment_Activity" />
+        <activity android:name=".Activity.Home.Post_Activity" />
+        <activity android:name=".Activity.Chat.Chat_Activity" />
+        <activity android:name=".Activity.Login.LoadApp_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.Login.Quen_Mk_Activity" />
+        <activity android:name=".Activity.Login.Check_SmsOtpActivity" />
+        <activity android:name=".Activity.Login.Sms_OtpActivity" />
+        <activity android:name=".Activity.Login.DangKy_Activity" />
+        <activity android:name=".Activity.Home.MainActivity2" />
+        <activity android:name=".Activity.Login.MainActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAwu8TkqIN-iJEvWyqUodfv7vNbSIX9S2Y" /> <!-- <service android:name=".Notification.MyFirebaseMessaging" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <!-- <service android:name=".Notification.MyFirebaseMessaging" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.MESSAGING_EVENT"/> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <service
+            android:name=".Notification.FirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".Notification.NotificationService" />
+    </application>
+
+</manifest>
